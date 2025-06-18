@@ -1,0 +1,30 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Mi Sitio Flask{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Proyecto Flask</h1>
+        <nav>
+            <a href="/">Inicio</a> |
+            <a href="/about">About</a> |
+            <a href="/contact">Contacto</a> |
+            <a href="/hello">Saludo</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>Mi Proyecto Flask</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- templates/hello.html -->
+{% extends "base.html" %}
+
+{% block title %}Greetings{% endblock %}
+
+{% block content %}
+  {% if name %}
+    <h2>Hello! {{ name }}</h2>
+  {% else %}
+    <h2>Hello! stranger..</h2>
+  {% endif %}
+{% endblock %}
